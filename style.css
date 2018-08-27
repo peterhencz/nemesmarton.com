@@ -24,7 +24,7 @@ body {
 }
 
 button, #sign, #sign_a {
-  cursor: pointer;  
+  cursor: default;
 }
 
 button {
@@ -34,7 +34,7 @@ button {
   color: #444444;
   padding: 18px 16px 10px 20px;
   border-bottom: 1px solid white;
-  transition: 0.7s ease;
+  transition: 0.5s ease-in-out;
 }
 
 button:hover {
@@ -52,7 +52,7 @@ button:hover {
 
 #sign {
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 #sign:hover {
@@ -78,13 +78,21 @@ button:hover {
 }
 
 .workMenu {
-  transform: perspective(300px) rotateX(90deg);
+  opacity: 0;
+  transform: scale(0.96);
   position: relative;
-  transition: 0.4s ease;
+  transition: 0.5s ease-in-out;
 }
 
 .visible {
-  transform: rotateX(0deg);
+  opacity: 1;
+  transform: scale(1) rotateX(0deg);
+  display: block;
+}
+
+.setScale {
+  opacity: 1;
+  transform: scale(0.96) rotateX(0deg);
   display: block;
 }
 

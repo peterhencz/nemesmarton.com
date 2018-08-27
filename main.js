@@ -87,15 +87,36 @@ function cica() {
 
 function works() {
   workMenu.classList.toggle('visible');
+  mainMenu.classList.toggle('setScale');
   console.log(workMenu);
-  openWorks();
 }
 
 function contact() {
-
+  console.log('contact');
 }
 
+function bio() {
+  console.log('bio');
+}
+
+function police() {
+  console.log('police');
+}
+
+function temporary() {
+  console.log('temporary');
+}
+
+function pipo() {
+  console.log('pipo');
+}
+
+function degree() {
+  console.log('degree');
+}
+
+
 function openWorks() {
-  mainMenu.style.transform = 'scale(0.8)';
+  mainMenu.style.transform = 'scale(0.9)';
     console.log(workMenu);
 }
