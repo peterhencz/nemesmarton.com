@@ -7,15 +7,17 @@
 </head>
 <body>
   <div id="menu">
-    <button onclick="works()">works</button>
-      <div class="workMenu">
-        <button class="work" onclick="police()">Police Paintings</button>
-        <button class="work" onclick="temporary()">Temporary Edges</button>
-        <button class="work" onclick="pipo()">Pour In Pour Out</button>
-        <button class="work" onclick="degree()">Degree Work</button>
-      </div>
-    <button onclick="bio()">bio</button>
-    <button onclick="contact()">contact</button>
+    <div id="mainMenu">
+      <button class="menuBtn" onclick="works()">works</button>
+      <button class="menuBtn" onclick="bio()">bio</button>
+      <button class="menuBtn" onclick="contact()">contact</button>
+    </div>
+    <div class="workMenu">
+        <button class="menuBtn" onclick="police()">Police Paintings</button>
+        <button class="menuBtn" onclick="temporary()">Temporary Edges</button>
+        <button class="menuBtn" onclick="pipo()">Pour In Pour Out</button>
+        <button class="menuBtn" onclick="degree()">Degree Work</button>
+    </div>
   </div>
   <img id="sign" onmouseenter="fullPageWhite()" onmouseleave="cica()" onclick="enterPage()" src="assets/nm_sign.png" alt="">
   <script src="main.js"></script>

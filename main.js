@@ -31,8 +31,8 @@ const colors = [
 ]
 
 const enter = document.querySelector('#sign');
-const menu = document.querySelector('#menu');
-
+const mainMenu = document.querySelector('#mainMenu');
+const workMenu = document.querySelector('.workMenu');
 
 function animationSetTime() {
   enter.addEventListener("transitionend", function(event) {
@@ -47,8 +47,8 @@ function enterPage() {
 
   enter.style.transition = "0.5s ease-in-out";
   enter.id = 'sign_a';
-  menu.style.transition = "0.5s ease-in-out";  
-  menu.id = 'menu_a';
+  mainMenu.style.transition = "0.5s ease-in-out";  
+  mainMenu.id = 'mainMenu_a';
 }
 
 function fullPageWhite() {
@@ -58,9 +58,9 @@ function fullPageWhite() {
 
 let lastGradient = 0;
 
-function fullPageGradient() {
 
-  let newGradient = Math.floor(Math.random() * colors.length);
+function fullPageGradient() {
+  let newGradient = Math.floor(Math.random() * colors.length);  
   
   if (newGradient != lastGradient) {
     let randomGradient = colors[newGradient];
@@ -81,15 +81,21 @@ function cica() {
     fullPageGradient();
     console.log(enter.style.display);
   } else {
-    console.log('cica');
     console.log(enter.style.display);
   }
 }
 
 function works() {
-  console.log('cica');
-  const workMenu = document.querySelector('.workMenu');
   workMenu.classList.toggle('visible');
-  console.log(workMenu)
-  
+  console.log(workMenu);
+  openWorks();
+}
+
+function contact() {
+
+}
+
+function openWorks() {
+  mainMenu.style.transform = 'scale(0.8)';
+    console.log(workMenu);
 }

@@ -41,6 +41,10 @@ button:hover {
   border-bottom: 0.7px solid black;
 }
 
+.content {
+  
+}
+
 #sign, #sign_a {
   position: absolute;
   top: 40vh;
@@ -60,11 +64,11 @@ button:hover {
   transform: perspective(300px) rotateX(60deg) scale(0.96);
 }
 
-#menu {
+#mainMenu {
   opacity: 0;
 }
 
-#menu_a {
+#mainMenu_a {
   opacity: 1;
   display: flex;
   -webkit-justify-content: center;
@@ -74,12 +78,13 @@ button:hover {
 }
 
 .workMenu {
-  display: none;
-  transition: 1s ease;
+  transform: perspective(300px) rotateX(90deg);
+  position: relative;
+  transition: 0.4s ease;
 }
 
 .visible {
-  opacity: 1;
+  transform: rotateX(0deg);
   display: block;
 }
 
