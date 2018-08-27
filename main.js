@@ -30,17 +30,18 @@ const colors = [
   '#5d3993'
 ]
 
-const enter = document.getElementById('sign');
+const enter = document.querySelector('#sign');
+const menu = document.querySelector('#menu');
+
 
 function animationSetTime() {
   enter.addEventListener("transitionend", function(event) {
     enter.style.display = "none";
       console.log('enter');
-  }, false);
+  }, true);
 }
 
 function enterPage() {
-  const menu = document.getElementById('menu');
   
   animationSetTime();
 
@@ -55,12 +56,10 @@ function fullPageWhite() {
   document.body.style.backgroundColor = 'white';
 }
 
-
 let lastGradient = 0;
 
 function fullPageGradient() {
 
-  const enter = document.getElementById('sign');
   let newGradient = Math.floor(Math.random() * colors.length);
   
   if (newGradient != lastGradient) {
@@ -88,5 +87,9 @@ function cica() {
 }
 
 function works() {
-  console.log(enter.style)
+  console.log('cica');
+  const workMenu = document.querySelector('.workMenu');
+  workMenu.classList.toggle('visible');
+  console.log(workMenu)
+  
 }

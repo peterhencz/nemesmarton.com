@@ -18,21 +18,27 @@ body {
   display: flex;
   -webkit-justify-content: center;
           justify-content: center;  
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
   animation: GradientMove 10s ease-in infinite;
   background-size: 300% 300%;
 }
 
-#page {
-  
-}
-
-.content {
-  
-}
-
 button, #sign, #sign_a {
   cursor: pointer;  
+}
+
+button {
+  margin: 1em;
+  border: none; 
+  outline: none;
+  color: #444444;
+  padding: 18px 16px 10px 20px;
+  border-bottom: 1px solid white;
+  transition: 0.7s ease;
+}
+
+button:hover {
+  border-bottom: 0.7px solid black;
 }
 
 #sign, #sign_a {
@@ -42,7 +48,7 @@ button, #sign, #sign_a {
 
 #sign {
   opacity: 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 #sign:hover {
@@ -67,18 +73,14 @@ button, #sign, #sign_a {
   opacity: 1;
 }
 
-button {
-  margin: 1em;
-  border: none; 
-  outline: none;
-  color: #444444;
-  padding: 18px 16px 10px 20px;
-  border-bottom: 1px solid white;
+.workMenu {
+  display: none;
   transition: 1s ease;
 }
 
-button:hover {
-  border-bottom: 1px solid black;
+.visible {
+  opacity: 1;
+  display: block;
 }
 
 @keyframes GradientMove { 
