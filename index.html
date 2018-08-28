@@ -6,20 +6,25 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div id="menu">
-    <div id="mainMenu">
-      <button class="menuBtn" onclick="works()">works</button>
-      <button class="menuBtn" onclick="bio()">bio</button>
-      <button class="menuBtn" onclick="contact()">contact</button>
+  <div class="page">
+    <div id="menu">
+      <div id="mainMenu">
+        <button class="menuBtn" onclick="works()">works</button>
+        <button class="menuBtn" onclick="bio()">bio</button>
+        <button class="menuBtn" onclick="contact()">contact</button>
+        <button class="menuBtn" onclick="statement()">artist statement</button>
+      </div>
+      <div class="workMenu">
+          <button class="menuBtn" onclick="police()">Police Paintings</button>
+          <button class="menuBtn" onclick="temporary()">Temporary Edges</button>
+          <button class="menuBtn" onclick="pipo()">Pour In Pour Out</button>
+          <button class="menuBtn" onclick="degree()">Degree Work</button>
+      </div>
     </div>
-    <div class="workMenu">
-        <button class="menuBtn" onclick="police()">Police Paintings</button>
-        <button class="menuBtn" onclick="temporary()">Temporary Edges</button>
-        <button class="menuBtn" onclick="pipo()">Pour In Pour Out</button>
-        <button class="menuBtn" onclick="degree()">Degree Work</button>
+    <div class="content">
+      <img id="sign" onmouseenter="fullPageWhite()" onmouseleave="cica()" onclick="enterPage()" src="assets/nm_sign.png" alt="">
     </div>
   </div>
-  <img id="sign" onmouseenter="fullPageWhite()" onmouseleave="cica()" onclick="enterPage()" src="assets/nm_sign.png" alt="">
   <script src="main.js"></script>
 </body>
 </html>
