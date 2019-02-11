@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: 'Lato', serif;
-  font-size: 1em;
+  font-size: 0.8em;
   display: flex;
   -webkit-justify-content: center;
           justify-content: center;  
@@ -49,22 +49,53 @@ button:hover {
 }
 
 .content {
-  margin-top: 4em;
-  display: flex;
-  justify-content: center;
-  width: 100vh;  
-  height: 80vh;
-  transition: 0.5s ease-in-out;
-}
-
-.contentText {
   opacity: 1;
   margin-top: 4em;
   display: flex;
   justify-content: center;
   width: 100vh;  
   height: 80vh;
-  transition: 0.5s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contentText {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: center;
+  width: 100vh;  
+  height: 100vh;
+}
+
+.contentBio {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vh;  
+  height: 100vh;
+}
+
+.contentText {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  display: flex;
+    flex-direction: row;
+  justify-content: center;
+  width: 100vh;  
+  height: 80vh;
+}
+
+.contentWork {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vh;  
+  height: 80vh;
 }
 
 #sign, #sign_a {
@@ -85,7 +116,6 @@ button:hover {
   opacity: 0;
   transform: perspective(300px) rotateX(60deg) scale(0.96);
 }
-
 
 #menu {
   display: flex;
@@ -126,6 +156,32 @@ button:hover {
   opacity: 1;
   transform: scale(0.96) rotateX(0deg);
   display: block;
+}
+
+.bioText {
+  margin-left: 20vh;
+}
+
+.imgBio {
+  margin-right: 3em;
+  max-width: 461px;
+  max-height: 600px;
+}
+
+.introImg {
+  width: 800px;
+  height: 591px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.introImg0 {
+  margin: 2em;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0%{opacity: 0;} 
+  100%{opacity: 1;}
 }
 
 @keyframes GradientMove { 
